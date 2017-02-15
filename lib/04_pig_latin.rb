@@ -35,7 +35,6 @@ def rule2(word)
   ind = 0
   while ind < word.length
     if isVowel(word[ind])
-      # b anana   anana + b(ind+1)
       result = word[ind...(word.length)]+word[0..ind-1]+"ay"
       break
     elsif ((word[ind] == "q") && (word[ind+1] == "u"))
